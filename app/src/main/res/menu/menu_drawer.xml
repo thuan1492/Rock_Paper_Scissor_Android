@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="Profile"/>
+        <item android:id="@+id/nav_game"
+            android:icon="@drawable/ic_game"
+            android:title="Game Center"/>
+    </group>
+    <item android:title="Store">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_store"
+                    android:icon="@drawable/ic_store"
+                    android:title="Shop"/>
+                <item android:id="@+id/nav_inventory"
+                    android:icon="@drawable/ic_inventory"
+                    android:title="Inventory"/>
+            </group>
+
+        </menu>
+    </item>
+    <item android:title="Settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings"/>
+                <item android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Log Out"/>
+            </group>
+
+        </menu>
+    </item>
+</menu>

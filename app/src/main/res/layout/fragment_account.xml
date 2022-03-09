@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_top_shape"
+            android:id="@+id/top">
+            <TextView
+                android:id="@+id/save_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="SAVE"
+                android:visibility="invisible"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_pic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/quantum_lightblue300"
+                app:cardCornerRadius="60dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="58dp">
+                    <ImageView
+                        android:id="@+id/pic_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="INFORMATION"
+            android:textColor="@color/quantum_grey800"
+            android:textSize="30dp"
+            android:layout_below="@+id/top"/>
+        <LinearLayout
+            android:layout_below="@+id/title"
+            android:id="@+id/infolayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:background="@drawable/info">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/gendertt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Player"
+                        android:textColor="@color/quantum_grey700"/>
+                    <EditText
+                        android:layout_below="@+id/gendertt"
+                        android:layout_width="match_parent"
+                        android:id="@+id/ingameName"
+                        android:focusable="true"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:hint="Set your nickname..."
+                        android:textSize="@dimen/fab_margin"
+                        android:textColorHint="#4A000000"
+
+                        android:backgroundTintMode="src_atop"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@+id/gendertt"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_inname" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/fullnamett"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textColor="@color/quantum_grey700"/>
+                    <EditText
+                        android:layout_below="@+id/fullnamett"
+                        android:id="@+id/fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTintMode="src_atop"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/fab_margin"
+                        android:layout_alignRight="@+id/fullnamett"
+                        android:src="@drawable/ic_account"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/birthdaytt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birth Day"
+                        android:textColor="@color/quantum_grey700"/>
+                    <EditText
+                        android:layout_below="@+id/birthdaytt"
+                        android:id="@+id/birthday"
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTintMode="src_atop"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignRight="@+id/birthdaytt"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_calendar_" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/phonett"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Phone Number"
+                        android:textColor="@color/quantum_grey700"/>
+                    <EditText
+                        android:layout_below="@+id/phonett"
+                        android:layout_width="match_parent"
+                        android:id="@+id/phnumber"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTintMode="src_atop"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/fab_margin"
+                        android:layout_alignRight="@+id/phonett"
+                        android:src="@drawable/contact_phone"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/addresstt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Score"
+                        android:textColor="@color/quantum_grey700"/>
+                    <EditText
+                        android:layout_below="@+id/addresstt"
+                        android:id="@+id/score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:backgroundTintMode="src_atop"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/fab_margin"
+                        android:layout_alignRight="@+id/addresstt"
+                        android:src="@drawable/ic_score"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/change_pass"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_button"
+            android:layout_below="@+id/infolayout"
+            android:textColor="@color/quantum_grey800"
+            android:text="Change password"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

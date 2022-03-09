@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948676772146",
+    "project_id": "game-android-f6540",
+    "storage_bucket": "game-android-f6540.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948676772146:android:d694cc7f9a253f3dc5572b",
+        "android_client_info": {
+          "package_name": "com.example.androidgroupproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948676772146-cnlvn2earvpm8fmisoknajnvbinosc3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzwy26SSBb4ijLZKoKB8bJz2rwSXQ3V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948676772146-cnlvn2earvpm8fmisoknajnvbinosc3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

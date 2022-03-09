@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sigup_bg"
+    android:isScrollContainer="true"
+    android:paddingHorizontal="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/top">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/circleview"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/quantum_lightblue100"
+                app:cardCornerRadius="60dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="58dp">
+
+                    <ImageView
+                        android:id="@+id/add_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_pic" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:id="@+id/footerLayout"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    android:hint="Enter your name..."
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:textColorHint="#4A000000"
+                    android:inputType="textCapCharacters"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/user"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <EditText
+                    android:id="@+id/user_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    android:focusable="false"
+                    android:hint="Birthday in dd/mm/yy"
+                    android:textColorHint="#4A000000"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/birthday"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/calendar"-->
+                <!--                    android:layout_width="25dp"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_marginRight="10dp"-->
+                <!--                    android:background="@drawable/calendar"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:layout_centerInParent="true"/>-->
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:hint="Enter your email..."
+                    android:textSize="@dimen/fab_margin"
+                    android:textColorHint="#4A000000"
+                    android:digits="1234567890@abcdefghijklmnopqrstuvwxyz."
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emailicon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    android:hint="Enter your phone number..."
+                    android:digits="1234567890"
+                    android:textColorHint="#4A000000"
+                    android:inputType="number"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/phone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/new_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"
+                    android:hint="Enter your new password..."
+                    android:textColorHint="#4A000000"
+                    android:inputType="textPassword"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/lockicon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:hint="Confirm your password..."
+                    android:textSize="@dimen/fab_margin"
+                    android:textColorHint="#4A000000"
+                    android:inputType="textPassword"
+                    android:paddingLeft="60dp"
+                    android:background="@drawable/ret_feild"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/lockicon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+
+                android:textColor="@color/black"
+                android:background="@drawable/profile_button"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/have_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Have account ? Login Here!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fab_margin"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
